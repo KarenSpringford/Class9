@@ -9,10 +9,10 @@ namespace Class9.Controllers
     public class HomeController : Controller
     {
         //
-        //GET:  /Home/
-        public string Index()
+        // GET: /Home/
+        public ActionResult Index()
         {
-            return "Welcome home!";
+            return View();
         }
     }
 }

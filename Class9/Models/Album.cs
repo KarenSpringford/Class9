@@ -26,6 +26,9 @@ namespace Class9.Models
             this.Title = Title;
         }
 
+        public int AlbumID { get; set; }
+
+
         public string Title { get; set; }
 
         public Genre Genre { get; set; }

@@ -25,6 +25,8 @@ namespace Class9.Models
             this.Name = Name;
         }
 
+        public int GenreID { get; set; }
+
         public string Name { get; set; }
     }
 }

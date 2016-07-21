@@ -7,10 +7,12 @@ using Class9.Models;
 
 namespace Class9.Controllers
 {
+    [Authorize]
     public class StoreController : Controller
     {
         //
         // GET: /Store/
+        [AllowAnonymous]
         public ActionResult Index()
         {
             List<Genre> genres = new List<Genre>
@@ -24,6 +26,7 @@ namespace Class9.Controllers
 
         //
         // GET: /Store/Browse?genre=Disco
+        [AllowAnonymous]
         public ActionResult Browse(string genre)
         {
             Genre genreModel = new Genre(genre);
@@ -31,6 +34,7 @@ namespace Class9.Controllers
         }
         //
         // GET: /Store/Details/5
+        [AllowAnonymous]
         public ActionResult Details(int id = 1)
         {
             Album album = new Album("Album " + id);
